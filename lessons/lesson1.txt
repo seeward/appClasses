@@ -2,15 +2,17 @@ session 1 - application design
 
 Application Stack
     - Layers of Technologies 
+    |<- OS -- web server -- database -- browser -- OS ->|
 
-    - Front End
+    - Front End - hosted on webserver (html / css / js)
         - Application UI
         - static files loaded into browser
         - run in browsers JS runtime
-    - Back End
+    - Back End - running live on webserver (java / nodejs / python)
         - App Data and Api
         - Auth / security
         - session state hosting
+
 
 Our Application - Group File sharing 
 
@@ -34,7 +36,7 @@ Our Application - Group File sharing
         - more control 
         - less cost
         - more maintanence
-    Services
+    Services - API
         - Auth
         - add / edit user
         - List files

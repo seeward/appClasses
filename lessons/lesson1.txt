@@ -1,0 +1,42 @@
+session 1 - application design
+
+Application Stack
+    - Layers of Technologies 
+
+    - Front End
+        - Application UI
+        - static files loaded into browser
+        - run in browsers JS runtime
+    - Back End
+        - App Data and Api
+        - Auth / security
+        - session state hosting
+
+Our Application - Group File sharing 
+
+ - Front End    
+    - HTML/CSS/JS - SPA
+        - we define our own internal app logic 100%
+    - Framework - Modules - React - JET
+        - we repeat common patterns with less customized code
+    Views
+        - Login 
+        - list of files
+        - upload form
+        - user / acct management
+
+
+ - Back End
+    - Service - Azure - AWS
+        - easy to use / learn
+        - can cost if app grows large
+    - Custom - Flask
+        - more control 
+        - less cost
+        - more maintanence
+    Services
+        - Auth
+        - add / edit user
+        - List files
+        - add files
+        - manage files

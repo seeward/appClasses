@@ -1,0 +1,26 @@
+session 2 - implementing views
+
+ - Front End    
+    - Framework - Modules - React - JET
+        - we repeat common patterns with less customized code
+    Views
+        - Login 
+            - 2 inputs (user/pass)
+            - 1 button (action)
+        - list of files
+            - array of file objects
+                - filename
+                - location
+                - description
+                - sharing group
+            - html listview to display
+        - upload form
+            - file input
+            - 1 button (action)
+        - user / acct management
+            - array of pref objects
+                - pref name
+                - preference value
+
+
+

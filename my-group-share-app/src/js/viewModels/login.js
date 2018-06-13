@@ -9,8 +9,8 @@ define(['ojs/ojcore', 'knockout', 'jquery','ojs/ojinputtext'],
       self.doLogin = function(evt){
         console.log($('#pass').val())
         let myPass = $('#pass').val();
-        
       }
+
       self.username = ko.observable("");
 
       self.connected = function() {
@@ -24,6 +24,7 @@ define(['ojs/ojcore', 'knockout', 'jquery','ojs/ojinputtext'],
 
       self.transitionCompleted = function() {
        
+
       };
     }
 

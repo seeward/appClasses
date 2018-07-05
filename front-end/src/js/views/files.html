@@ -1,10 +1,10 @@
 <div class="oj-hybrid-padding">
   <h1>Shared Files</h1>
   <div class="oj-panel">
-    <oj-bind-for-each data="[[users]]">
+    <oj-bind-for-each data="[[files]]">
       <template>
-        <oj-button on-oj-action="[[downloadFile]]" data-bind="attr: {id:$current.data.id}">
-          <img data-bind="attr: {src:$current.data.url}" />
+        <oj-button on-oj-action="[[downloadFile]]" style="width:100%" data-bind="attr: {id:$current.data.id}">
+          <img data-bind="attr: {src:$current.data.url}" height="30" />
           <oj-bind-text value="[[$current.data.name]]"></oj-bind-text>
         </oj-button>
         <br>

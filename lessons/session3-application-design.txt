@@ -1,0 +1,23 @@
+session 3 - application design
+
+Complete views and wire Javascript methods
+    - login
+        - method to call backend service
+    - files 
+        - method to sort files
+    - upload
+        - method to handle file upload
+
+Model / View / Controller
+
+Model - a *representation* of our data - RESTful
+
+View - a visualization of our Model
+
+Controller - mutates the Model - updates the View
+
+
+Views / ViewModels
+
+Working with data
+

@@ -18,9 +18,10 @@ define(['ojs/ojcore', 'knockout', 'jquery','ojs/ojrouter','ojs/ojinputtext'],
           url: "http://0.0.0.0:5000/api/v1.0/checkuser?user="+self.username(),
           method: "get"
         }).done(function(data){
-          //alert(data.success);
+          // check our server response
           if(data.success == "true"){
             console.log("success");
+            // go to the files route
             self.router.go('files');
           } else {
             alert("forbidden login... ")
@@ -40,3 +41,5 @@ define(['ojs/ojcore', 'knockout', 'jquery','ojs/ojrouter','ojs/ojinputtext'],
     return new LoginViewModel();
   }
 );
+
+

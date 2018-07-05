@@ -1,0 +1,31 @@
+session 4 - network calls
+
+HTTP - method for communication with backend servers
+    - status - https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+    - Async vs sync
+
+AJAX - Async JS Exchange Protocol
+        - wrapper around vanilla JS 
+
+        function httpGetAsync(theUrl, callback) {
+            // get instance of the class
+            var xmlHttp = new XMLHttpRequest(); 
+            // attach listener for state ans status
+            xmlHttp.onreadystatechange = function() { 
+                // check for success
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+                // fire callback passed in to the method
+                if(typeof callback === 'function'){
+                    // call with our server response
+                    callback(xmlHttp.responseText);
+                }
+                
+            }
+                }
+                // create the http call 
+            xmlHttp.open("GET", theUrl, true); // true for asynchronous 
+            // execute the call
+            xmlHttp.send(null); 
+            }
+
+            
